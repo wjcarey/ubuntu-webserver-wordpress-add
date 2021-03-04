@@ -17,9 +17,9 @@ read DOMAIN_NAME
 echo "downloading webserver software install script from github ..."
 sudo curl -o mysql-database-add.sh https://raw.githubusercontent.com/wjcarey/mysql-database-add/main/mysql-database-add.sh && sudo chmod 777 mysql-database-add.sh && sudo ./mysql-database-add.sh ${DATABASE_NAME}
 
-#MODIFY APACHE
+#CREATE APACHE VIRTUALHOST
 echo "downloading webserver config script from github ..."
-sudo curl -o apache2-modify-conf.sh https://raw.githubusercontent.com/wjcarey/apache2-modify-conf/master/apache2-modify-conf.sh && sudo chmod 777 apache2-modify-conf.sh && sudo ./apache2-modify-conf.sh
+sudo curl -o apache2-create-virtualhost.sh https://raw.githubusercontent.com/wjcarey/apache2-create-virtualhost/main/apache2-create-virtualhost.sh && sudo chmod 777 apache2-create-virtualhost.sh && sudo ./apache2-create-virtualhost.sh ${INSTALL_PATH} ${DOMAIN_NAME}
 
 #WORDPRESS INSTALL
 echo "downloading wordpress install script from github ..."
