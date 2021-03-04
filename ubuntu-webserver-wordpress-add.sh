@@ -27,7 +27,7 @@ sudo curl -o wordpress-install.sh https://raw.githubusercontent.com/wjcarey/word
 
 #CERTBOT INSTALL
 echo "downloading certbot install script from github ..."
-sudo curl -o apache2-certbot.sh https://raw.githubusercontent.com/wjcarey/apache2-certbot/main/apache2-certbot.sh && sudo chmod 777 apache2-certbot.sh && sudo ./apache2-certbot.sh ${INSTALL_PATH} ${DOMAIN_NAME}
+sudo curl -o apache2-certbot-add-domain.sh https://raw.githubusercontent.com/wjcarey/apache2-certbot-add-domain/main/apache2-certbot-add-domain.sh && sudo chmod 777 apache2-certbot-add-domain.sh && sudo ./apache2-certbot-add-domain.sh ${INSTALL_PATH} ${DOMAIN_NAME}
 
 echo "success: installation complete ..."
 rm -- "$0"
