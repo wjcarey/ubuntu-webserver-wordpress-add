@@ -19,7 +19,7 @@ sudo curl -o mysql-database-add.sh https://raw.githubusercontent.com/wjcarey/mys
 
 #CREATE APACHE VIRTUALHOST
 echo "downloading webserver config script from github ..."
-sudo curl -o apache2-create-virtualhost.sh https://raw.githubusercontent.com/wjcarey/apache2-create-virtualhost/main/apache2-create-virtualhost.sh && sudo chmod 777 apache2-create-virtualhost.sh && sudo ./apache2-create-virtualhost.sh ${INSTALL_PATH} ${DOMAIN_NAME}
+sudo curl -o apache2-virtualhost.sh https://raw.githubusercontent.com/wjcarey/apache2-virtualhost/main/apache2-virtualhost.sh && sudo chmod 777 apache2-virtualhost.sh && sudo ./apache2-virtualhost.sh ${INSTALL_PATH} ${DOMAIN_NAME}
 
 #WORDPRESS INSTALL
 echo "downloading wordpress install script from github ..."
